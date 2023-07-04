@@ -1,0 +1,35 @@
+{
+  "mode": "All",
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.Compute/virtualMachines"
+        },
+        {
+          "not": {
+            "field": "Microsoft.Compute/imagePublisher",
+            "equals": "MicrosoftWindowsServer"
+          }
+        },
+        {
+          "not": {
+            "field": "Microsoft.Compute/imageOffer",
+            "equals": "WindowsServer"
+          }
+        },
+        {
+          "not": {
+            "field": "Microsoft.Compute/imageSku",
+            "equals": "2022-Datacenter"
+          }
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  },
+  "parameters": {}
+}

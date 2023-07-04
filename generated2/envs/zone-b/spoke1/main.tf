@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 locals {
-  resource_group_name = "zone-b-spoke1-rg-01"
+  resource_group_name = "zone-b-spoke1-rg"
 }
 
 module "virtual_network" {
@@ -44,7 +44,9 @@ module "virtual_machine" {
   subnet_id           = module.subnet.subnet_id
   nsg_id              = module.network_security_group.nsg_id
   asg_id              = module.application_security_group.asg_id
-}resource "azurerm_resource_group" "rg_02" {
+}
+
+resource "azurerm_resource_group" "rg_02" {
   name     = "zone-b-spoke1-rg-02"
   location = var.location
 }

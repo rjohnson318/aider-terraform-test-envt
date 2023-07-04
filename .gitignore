@@ -8,3 +8,5 @@ generated2/.aider.tags.cache.v1/cache.db
 generated2/.aider.tags.cache.v1/cache.db-shm
 generated2/.aider.tags.cache.v1/cache.db-wal
 .aider.chat.history.md
+.aider.chat.history.md
+*.aider

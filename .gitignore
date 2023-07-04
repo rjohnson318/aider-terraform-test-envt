@@ -1,0 +1,10 @@
+.aider.chat.history.md
+.aider.input.history
+generated2/.gitignore
+generated2/.aider.ident.cache.v1/cache.db
+generated2/.aider.ident.cache.v1/cache.db-shm
+generated2/.aider.ident.cache.v1/cache.db-wal
+generated2/.aider.tags.cache.v1/cache.db
+generated2/.aider.tags.cache.v1/cache.db-shm
+generated2/.aider.tags.cache.v1/cache.db-wal
+.aider.chat.history.md

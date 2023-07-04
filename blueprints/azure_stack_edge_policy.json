@@ -1,0 +1,26 @@
+{
+  "properties": {
+    "displayName": "Deny Azure Stack Edge Deployment",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "This policy denies the deployment of Azure Stack Edge devices.",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "Compute"
+    },
+    "parameters": {},
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.DataBoxEdge/dataBoxEdgeDevices"
+          }
+        ]
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 locals {
-  resource_group_name = "zone-b-spoke1-rg"
+  resource_group_name = "zone-b-spoke1-rg-01"
 }
 
 module "virtual_network" {

@@ -1,0 +1,33 @@
+
+# 2023-07-02 22:51:09.538336
++Create AKS private cluster named gitlab-aks. Then deploy gitlab with help chart in to aks cluster.
+
+# 2023-07-02 22:52:32.203349
++/help
+
+# 2023-07-02 22:52:42.856345
++/tokens
+
+# 2023-07-02 22:53:01.912274
++/exit
+
+# 2023-07-02 22:53:32.379858
++Create Linux VM in terrafrom. Name the vm Tools.
+
+# 2023-07-02 22:54:37.020345
++make this for azure gov
+
+# 2023-07-02 22:55:14.815720
++change the location of all resrouces to east us
+
+# 2023-07-02 22:56:26.506781
++/add variables.tf
+
+# 2023-07-02 22:56:52.455582
++ensure the main.tf file uses variables instead of hardcoded values
+
+# 2023-07-02 22:58:11.918660
++/to
+
+# 2023-07-02 22:58:47.409175
++/exit

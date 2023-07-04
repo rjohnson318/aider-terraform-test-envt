@@ -56,4 +56,14 @@ module "storage_account" {
   account_name        = "productionhubstorage"
   account_tier        = "Standard"
   account_replication_type = "LRS"
+}resource "azurerm_private_dns_zone" "example" {
+  name                = "privatelink.blob.core.windows.net"
+  resource_group_name = var.resource_group_name
+}
+
+resource "azurerm_private_dns_zone_virtual_network_link" "example" {
+  name                  = "${azurerm_private_dns_zone.example.name}-link"
+  resource_group_name   = azurerm_private_dns_zone.example.resource_group_name
+  private_dns_zone_name = azurerm_private_dns_zone.example.name
+  virtual_network_id    = var.virtual_network_id
 }
